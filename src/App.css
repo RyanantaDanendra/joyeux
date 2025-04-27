@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("./assets/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+html {
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  max-height: 100vh;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#bottom,
+#top {
+  transition: 0.5s ease-out;
+}
+
+#button {
+  transition: 0.3s ease-out;
+  border-radius: 0 50% 0 50%;
+}
+
+.Content-container {
+  transition: all 0.5s ease-out;
+}
+
+.image-wrapper {
+  animation: float 3s infinite ease-out;
+}
+
+.text {
+  font-family: "Dancing Script";
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
